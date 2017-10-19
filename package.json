@@ -1,0 +1,40 @@
+{
+    "name": "charg-wallet",
+    "version": "0.0.1",
+    "description": "A minimal Ethereum wallet for Neureal",
+    "author": "Curtis Gailey <curtis.gailey@gmail.com>",
+    "main": "main.js",
+    "scripts": {
+        "start": "electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
+    },
+    "build": {
+        "appId": "com.chargwallet",
+        "productName": "CHARG Wallet",
+        "mac": {
+            "category": "financial"
+        },
+        "linux": {
+            "target": [
+                "deb"
+            ]
+        },
+        "win": {}
+    },
+    "repository": "https://github.com/ChargCoin/charg-wallet",
+    "keywords": [
+        "CHARG",
+        "charg-wallet"
+    ],
+    "license": "MIT",
+    "devDependencies": {
+        "electron": "~1.6.2",
+        "electron-builder": "^19.37.2"
+    },
+    "dependencies": {
+        "clipboardy": "^1.1.4",
+        "electron-default-menu": "^1.0.1",
+        "ethers": "^2.1.1"
+    }
+}
