@@ -31,11 +31,11 @@ This CHARG Wallet will allow you to set a custom Gas Price if you need to change
 Feel free to look at what this application is doing. Иeureal Wallet was built in electron, jquery, bootstrap, and uses ether.js for decrypting wallets. Below you'll find the main functionality of the application.
 
 ### Audit Lines
-- [CHARGToken Contract](https://github.com/hunterlong/neureal-wallet/blob/master/js/main.js#L22)
-- [Send Ethereum Transaction](https://github.com/hunterlong/neureal-wallet/blob/master/js/main.js#L319)
-- [Send CHARG Transaction](https://github.com/hunterlong/neureal-wallet/blob/master/js/main.js#L367)
-- [Decrypting Keystore JSON](https://github.com/hunterlong/neureal-wallet/blob/master/js/main.js#L276)
-- [Using Private Key](https://github.com/hunterlong/neureal-wallet/blob/master/js/main.js#L163)
+- [CHARGToken Contract](https://github.com/ChargCoin/charg-wallet-winmaclinux/blob/master/js/main.js#L22)
+- [Send Ethereum Transaction](https://github.com/ChargCoin/charg-wallet-winmaclinux/blob/master/js/main.js#L319)
+- [Send CHARG Transaction](https://github.com/ChargCoin/charg-wallet-winmaclinux/blob/master/js/main.js#L367)
+- [Decrypting Keystore JSON](https://github.com/ChargCoin/charg-wallet-winmaclinux/blob/master/js/main.js#L276)
+- [Using Private Key](https://github.com/ChargCoin/charg-wallet-winmaclinux/blob/master/js/main.js#L163)
 
 ### Build
 You can compile this electron application on your own.
