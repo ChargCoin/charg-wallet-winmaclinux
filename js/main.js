@@ -13,7 +13,7 @@ var tokenBalance = 0;
 var ethBalance = 0;
 var version = "0.0.1";
 
-var necpUSD = 0;
+var chargUSD = 0;
 var etherUSD = 0;
 
 var provider = new providers.EtherscanProvider(false);
@@ -48,7 +48,7 @@ function OpenMyEtherWallet() {
 function StorjPrice() {
   var api = "https://api.coinmarketcap.com/v1/ticker/storj/";
   $.get(api, function(data, status){
-    necpUSD = parseFloat(data[0]['price_usd']);
+    chargUSD = parseFloat(data[0]['price_usd']);
   });
 }
 
@@ -69,12 +69,12 @@ function UpdatePricing() {
 
 function UpdatePortfolio() {
   setTimeout(function() {
-    var totalStorj = tokenBalance * necpUSD;
+    var totalStorj = tokenBalance * chargUSD;
     var totalEth = ethBalance * etherUSD;
     var totalPort = totalStorj + totalEth;
-    // $("#portNeurealUSD").html("($"+necpUSD+")");
+    // $("#portChargUSD").html("($"+hargUSD+")");
     // $("#portEthUSD").html("($"+etherUSD+")");
-    // $("#portfolioNeureal").html(totalStorj.toFixed(2))
+    // $("#portfolioCharg").html(totalStorj.toFixed(2))
     // $("#portfolioEth").html(totalEth.toFixed(2))
     // $("#portfolioTotal").html(totalPort.toFixed(2))
     // $(".portfolio").fadeIn('fast');
@@ -389,7 +389,7 @@ function SendToken(callback) {
             $(".txidLink").attr("onclick", "OpenEtherScan('"+txid.hash+"')");
             $("#senttxamount").html(amount);
             $("#txtoaddress").html(to);
-            $("#txtype").html("NECP");
+            $("#txtype").html("CHARG");
             $('#trxsentModal').modal('show');
             updateBalance();
         });
