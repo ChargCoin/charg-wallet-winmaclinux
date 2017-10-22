@@ -214,8 +214,7 @@ function updateBalance() {
     callPromise.then(function(result) {
         var trueBal = result[0].toString(10);
         var messageEl = $('#chargbal');
-        var n = trueBal * 0.00000001;
-        n = abbreviateNumber(n);
+        var n = trueBal * 0.000000000000000001;
         console.log("CHARG Balance: " + n);
         var atyxValue = n.toLocaleString(
             undefined, // use a string like 'en-US' to override browser locale
